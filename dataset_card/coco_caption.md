@@ -26,7 +26,7 @@ Models are typically evaluated according to a [BLEU](https://aclanthology.org/P0
 | 4    | SimVLM  |  40.6  | 143.3 |  33.7  | 25.4  |                                                [paper](https://openreview.net/pdf?id=GUrhfTuf_3)                                                 |
 | 5    |  VinVL  |  41.0  | 140.9 |  31.1  | 25.2  |                           [paper](https://arxiv.org/pdf/2101.00529v2.pdf), [code](https://github.com/microsoft/Oscar)                            |
 | 6    |  OSCAR  |  40.7  | 140.0 |  30.6  | 24.5  |                           [paper](https://arxiv.org/pdf/2004.06165v5.pdf), [code](https://github.com/microsoft/Oscar)                            |
-| 7    |  BLIP   |  40.4  | 136.7 |  31.4  | 24.3  | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/salesforce/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP) |
+| 7    |  BLIP   |  40.4  | 136.7 |  31.4  | 24.3  | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/anonymous/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP) |
 | 8    |   M^2   |  39.1  | 131.2 |  29.2  | 22.6  |                 [paper](https://arxiv.org/pdf/1912.08226v2.pdf), [code](https://github.com/aimagelab/meshed-memory-transformer)                  |
 | 9    |  BUTD   |  36.5  | 113.5 |  27.0  | 20.3  |               [paper](https://arxiv.org/abs/1707.07998?context=cs), [code](https://github.com/peteanderson80/bottom-up-attention)                |
 | 10    | ClipCap |  32.2  | 108.4 |  27.1  | 20.1  |                     [paper](https://arxiv.org/pdf/2111.09734v1.pdf), [code](https://github.com/rmokady/clip_prefix_caption)                      |

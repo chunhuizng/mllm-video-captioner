@@ -12,7 +12,7 @@
 import sys
 # if 'google.colab' in sys.modules:
  #   print('Running in Colab.')
-  #  get_ipython().system('git clone https://github.com/salesforce/LAVIS')
+  #  get_ipython().system('git clone https://github.com/anonymous/LAVIS')
    # get_ipython().run_line_magic('cd', 'LAVIS')
    # get_ipython().system('pip install .')
    # get_ipython().system('pip3 install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz')

@@ -25,7 +25,7 @@ Models are typically evaluated according to a [CIDEr](https://aclanthology.org/P
 | ---- | :-----: | :----: | :---: | :----------------------------------------------------------------------------------------------------------------------------------------------: | :---:|:---:|
 | 1    |  CoCa  |   122.4   |  15.5  | 120.6 | 15.5| [paper](https://arxiv.org/pdf/2205.01917.pdf) |
 | 2    |  LEMON  |  117.3 | 15.0  |114.3 | 14.9           |                                                         [paper]()                                                                     |
-| 3    |  BLIP   |  113.2 | 14.8 |  -  | -  | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/salesforce/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP) |
+| 3    |  BLIP   |  113.2 | 14.8 |  -  | -  | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/anonymous/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP) |
 | 4    | SimVLM  |  112.2  | - | 110.3  | 14.5  |                                                [paper](https://openreview.net/pdf?id=GUrhfTuf_3)                                                 |
 | 5    |  VinVL  |  105.1  | 14.4 |  103.7  | 14.4  |                           [paper](https://arxiv.org/pdf/2101.00529v2.pdf), [code](https://github.com/microsoft/Oscar)                            |
 

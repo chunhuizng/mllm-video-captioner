@@ -6,7 +6,7 @@ InstructBLIP proposes a new vision-language instruction-tuning framework using B
 
 ### Install from source:
 ```
-git clone https://github.com/salesforce/LAVIS.git
+git clone https://github.com/anonymous/LAVIS.git
 cd LAVIS
 pip install -e .
 ```
@@ -24,7 +24,7 @@ We will soon support installing InstructBLIP with PyPI
 
 ### Prepare Vicuna Weights
 InstructBLIP uses frozen Vicuna 7B and 13B models. Please first follow the [instructions](https://github.com/lm-sys/FastChat) to prepare Vicuna v1.1 weights. 
-Then modify the ```llm_model``` in the [Model Config](https://github.com/salesforce/LAVIS/blob/main/lavis/configs/models/blip2/blip2_instruct_vicuna7b.yaml) to the folder that contains Vicuna weights.
+Then modify the ```llm_model``` in the [Model Config](https://github.com/anonymous/LAVIS/blob/main/lavis/configs/models/blip2/blip2_instruct_vicuna7b.yaml) to the folder that contains Vicuna weights.
 
 
 ### Instruction-following Image-to-text Generation 

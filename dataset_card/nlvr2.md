@@ -27,8 +27,8 @@ Accuracy.
 | 3    | SimVLM  |   84.5   |   85.2   | [paper](https://openreview.net/pdf?id=GUrhfTuf_3) |
 | 4    | X-VLM  | 84.4  | 84.8  |  [paper](https://arxiv.org/pdf/2111.08276v3.pdf), [code](https://github.com/zengyan-97/X-VLM)
 | 5    | VinVL  | 82.7 | 84.0 |                                                                          [paper](https://arxiv.org/pdf/2101.00529.pdf), [code](https://github.com/pzzhang/VinVL)                                                                           |
-| 6    | ALBEF  |   82.6   |   83.1   |  [paper](https://arxiv.org/abs/2107.07651), [code](https://github.com/salesforce/ALBEF), [blog](https://blog.salesforceairesearch.com/align-before-fuse/)                                                 |
-| 7    | BLIP  |   82.2   |   82.2   | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/salesforce/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP), [blog](https://blog.salesforceairesearch.com/blip-bootstrapping-language-image-pretraining/)|
+| 6    | ALBEF  |   82.6   |   83.1   |  [paper](https://arxiv.org/abs/2107.07651), [code](https://github.com/anonymous/ALBEF), [blog](https://blog.anonymousairesearch.com/align-before-fuse/)                                                 |
+| 7    | BLIP  |   82.2   |   82.2   | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/anonymous/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP), [blog](https://blog.anonymousairesearch.com/blip-bootstrapping-language-image-pretraining/)|
 | 8    |  OSCAR  |  78.1  | 78.4 |                           [paper](https://arxiv.org/pdf/2004.06165v5.pdf), [code](https://github.com/microsoft/Oscar)                            |
 | 9    | SOHO  |   76.4   |   77.3  | [paper](https://arxiv.org/pdf/2104.03135.pdf), [code](https://github.com/researchmm/soho) |
 | 10    | UNITER | 77.2  | 77.9 |                                                          [paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123750103.pdf), [code](https://github.com/ChenRocks/UNITER)                                                          |

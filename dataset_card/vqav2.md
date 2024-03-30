@@ -32,10 +32,10 @@ Accuracies computed by evaluation server: https://eval.ai/web/challenges/challen
 | 3    |  OFA  |   82.0   |   82.0   |   [paper](https://arxiv.org/abs/2202.03052), [code](https://github.com/OFA-Sys/OFA)  |
 | 4    |  Florence  |   80.2   |   80.4   |   [paper](https://arxiv.org/abs/2111.11432), [code](https://github.com/OFA-Sys/OFA)  |
 | 5    | SimVLM  |   80.0   |   80.3   | [paper](https://openreview.net/pdf?id=GUrhfTuf_3)                                                                                                                  |
-| 6    | BLIP  |   78.3   |   78.3   | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/salesforce/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP) |
+| 6    | BLIP  |   78.3   |   78.3   | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/anonymous/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP) |
 | 7    | X-VLM  | 78.2  | 78.4  |  [paper](https://arxiv.org/pdf/2111.08276v3.pdf), [code](https://github.com/zengyan-97/X-VLM)                                                                          |
 | 8    | VinVL  |   76.6   |   76.6  | [paper](https://arxiv.org/pdf/2101.00529v2.pdf), [code](https://github.com/microsoft/Oscar) |
-| 9    | ALBEF  |   75.8   |   76.0   |  [paper](https://arxiv.org/abs/2107.07651), [code](https://github.com/salesforce/ALBEF), [blog](https://blog.salesforceairesearch.com/align-before-fuse/)                                                                                       |
+| 9    | ALBEF  |   75.8   |   76.0   |  [paper](https://arxiv.org/abs/2107.07651), [code](https://github.com/anonymous/ALBEF), [blog](https://blog.anonymousairesearch.com/align-before-fuse/)                                                                                       |
 | 10    | UNITER | 73.8  | 74.0 |                                                          [paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123750103.pdf), [code](https://github.com/ChenRocks/UNITER)                                                          |
 
 ## Auto-Downloading

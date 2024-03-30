@@ -5,12 +5,12 @@ This is the official implementation of BLIP-2 [paper](https://arxiv.org/abs/2301
 
 ### Install:
 ```
-pip install salesforce-lavis
+pip install anonymous-lavis
 ```
 or install from source following LAVIS instruction.
 
 ### Demo:
-Try out our [Notebook Demo](https://github.com/salesforce/LAVIS/blob/main/examples/blip2_instructed_generation.ipynb) on instructed vision-to-language generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/salesforce/LAVIS/blob/main/examples/blip2_instructed_generation.ipynb)
+Try out our [Notebook Demo](https://github.com/anonymous/LAVIS/blob/main/examples/blip2_instructed_generation.ipynb) on instructed vision-to-language generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anonymous/LAVIS/blob/main/examples/blip2_instructed_generation.ipynb)
 
 
 ### BLIP-2 Model Zoo 
@@ -82,15 +82,15 @@ model.generate({"image": image,"prompt": prompt})
 ```
 
 ### Feature Extraction Example
-BLIP-2 supports the Unified Feature Extraction Interface of LAVIS. Checkout this [notebook](https://github.com/salesforce/LAVIS/blob/3446bac20c5646d35ae383ebe6d13cec4f8b00cb/examples/blip2_feature_extraction.ipynb) for an example.
+BLIP-2 supports the Unified Feature Extraction Interface of LAVIS. Checkout this [notebook](https://github.com/anonymous/LAVIS/blob/3446bac20c5646d35ae383ebe6d13cec4f8b00cb/examples/blip2_feature_extraction.ipynb) for an example.
 
 ### Image-Text Matching Example
-BLIP-2 can compute the image-text matching score using the same interface as BLIP. Checkout this [notebook](https://github.com/salesforce/LAVIS/blob/3446bac20c5646d35ae383ebe6d13cec4f8b00cb/examples/blip2_image_text_matching.ipynb) for an example. 
+BLIP-2 can compute the image-text matching score using the same interface as BLIP. Checkout this [notebook](https://github.com/anonymous/LAVIS/blob/3446bac20c5646d35ae383ebe6d13cec4f8b00cb/examples/blip2_image_text_matching.ipynb) for an example. 
 
 ### Benchmark Evaluation 
-Follow [Dataset Download](https://opensource.salesforce.com/LAVIS//latest/getting_started.html#auto-downloading-and-loading-datasets) to prepare common vision-language datasets.
+Follow [Dataset Download](https://opensource.anonymous.com/LAVIS//latest/getting_started.html#auto-downloading-and-loading-datasets) to prepare common vision-language datasets.
 
-Run [these scripts](https://github.com/salesforce/LAVIS/tree/main/run_scripts/blip2/eval) for evaluating pretrained and finetuned models. 
+Run [these scripts](https://github.com/anonymous/LAVIS/tree/main/run_scripts/blip2/eval) for evaluating pretrained and finetuned models. 
 
 ### Training
 Stage-1 Pre-training (from scratch): 
@@ -102,7 +102,7 @@ Stage-2 Pre-training:
 Finetune for image captioning: 
 ```bash run_scripts/blip2/train/train_caption_coco.sh```
 
-The [config files](https://github.com/salesforce/LAVIS/tree/main/lavis/projects/blip2/train) can be modified for customized training.
+The [config files](https://github.com/anonymous/LAVIS/tree/main/lavis/projects/blip2/train) can be modified for customized training.
 
 ### Citing BLIP-2
 <pre>

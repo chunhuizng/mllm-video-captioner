@@ -21,7 +21,7 @@ Accuracy.
 (Ranked by accurarcy on test-dev.)
 | Rank | Model  | Acc. | Resources |
 | ---- | :----: | :-------: | :-------: |
-| 1    |  ALPro  |  42.1 |  [paper](https://arxiv.org/abs/2112.09583), [code](https://github.com/salesforce/ALPRO), [blog](https://blog.salesforceairesearch.com/alpro/) |
+| 1    |  ALPro  |  42.1 |  [paper](https://arxiv.org/abs/2112.09583), [code](https://github.com/anonymous/ALPRO), [blog](https://blog.anonymousairesearch.com/alpro/) |
 | 2   |  VQA-T  |  41.5 | [paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Just_Ask_Learning_To_Answer_Questions_From_Millions_of_Narrated_ICCV_2021_paper.pdf), [code](https://github.com/antoyang/just-ask), [demo](http://videoqa.paris.inria.fr/) |
 | 3   |  CoMVT | 39.5 | [paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Seo_Look_Before_You_Speak_Visually_Contextualized_Utterances_CVPR_2021_paper.pdf) |
 | 4   |  SSML | 35.1 | [paper](https://arxiv.org/abs/2003.03186) |

@@ -1,5 +1,5 @@
 """
- Copyright (c) 2022, salesforce.com, inc.
+ Copyright (c) 2022, anonymous.com, inc.
  All rights reserved.
  SPDX-License-Identifier: BSD-3-Clause
  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
@@ -19,7 +19,7 @@ def fetch_requirements(filename):
 
 
 setup(
-    name="salesforce-lavis",
+    name="anonymous-lavis",
     version="1.0.1",
     author="Dongxu Li, Junnan Li, Hung Le, Guangsen Wang, Silvio Savarese, Steven C.H. Hoi",
     description="LAVIS - A One-stop Library for Language-Vision Intelligence",

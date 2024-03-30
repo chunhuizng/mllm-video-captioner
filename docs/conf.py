@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "LAVIS"
-copyright = "2022, salesforce.com inc."
+copyright = "2022, anonymous.com inc."
 author = (
     "Dongxu Li, Junnan Li, Hung Le, Guangsen Wang, Silvio Savarese, Steven C.H. Hoi"
 )

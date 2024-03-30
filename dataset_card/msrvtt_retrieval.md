@@ -18,7 +18,7 @@ We use TR to denote the video-text retrieval recall score and VR to denote text-
 (Ranked by TR@1.)
 <!-- | Rank | Model  | TR@1  | TR@5  | TR@10 | IR@1  | IR@5  | IR@10 |                                                                                                                   Resources                                                                                                                    |
 | ---- | :----: | :---: | :---: | :---: | :---: | :---: | :---: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 1    |  BLIP  | 82.4  | 95.4  | 97.9  | 65.1  | 86.3  | 91.8  | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/salesforce/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP), [blog](https://blog.salesforceairesearch.com/blip-bootstrapping-language-image-pretraining/) | -->
+| 1    |  BLIP  | 82.4  | 95.4  | 97.9  | 65.1  | 86.3  | 91.8  | [paper](https://arxiv.org/pdf/2201.12086.pdf), [code](https://github.com/anonymous/BLIP), [demo](https://huggingface.co/spaces/Salesforce/BLIP), [blog](https://blog.anonymousairesearch.com/blip-bootstrapping-language-image-pretraining/) | -->
 
 ## References
 Xu, Jun, Tao Mei, Ting Yao, and Yong Rui. "Msr-vtt: A large video description dataset for bridging video and language." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 5288-5296. 2016.

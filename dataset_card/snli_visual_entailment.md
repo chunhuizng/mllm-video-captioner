@@ -40,7 +40,7 @@ Accuracy.
 | 1    |  CoCa  |   87.0   |   87.1   |  [paper](https://arxiv.org/pdf/2205.01917.pdf) |
 | 2    | SimVLM  |   86.2   |   86.3   | [paper](https://openreview.net/pdf?id=GUrhfTuf_3) |
 | 3    | SOHO  |   85.0   |  85.0  | [paper](https://arxiv.org/pdf/2104.03135.pdf), [code](https://github.com/researchmm/soho) |
-| 4    | ALBEF  |   80.8   |   80.9   |  [paper](https://arxiv.org/abs/2107.07651), [code](https://github.com/salesforce/ALBEF), [blog](https://blog.salesforceairesearch.com/align-before-fuse/)                                                 |
+| 4    | ALBEF  |   80.8   |   80.9   |  [paper](https://arxiv.org/abs/2107.07651), [code](https://github.com/anonymous/ALBEF), [blog](https://blog.anonymousairesearch.com/align-before-fuse/)                                                 |
 | 5    | VILLA  | 80.2  | 80.0  |                                                                          [paper](https://arxiv.org/pdf/2004.06165v5.pdf), [code](https://github.com/microsoft/Oscar)                                                                           |
 | 6    | UNITER | 79.4  | 79.4 |                                                          [paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123750103.pdf), [code](https://github.com/ChenRocks/UNITER)                                                          |
 | 7    | LXMERT | 72.4  | 72.5 |                                                          [paper](https://aclanthology.org/D19-1514.pdf), [code](https://github.com/airsplay/lxmert)                                                          |

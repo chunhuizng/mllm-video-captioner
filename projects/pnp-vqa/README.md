@@ -5,7 +5,7 @@
 This is the code for <a href="https://arxiv.org/abs/2210.08773">PNP-VQA paper</a>. We integrate the implementation into LAVIS.
 
 ### Demo
-We include an interactive demo [Colab notebook](https://colab.research.google.com/github/salesforce/LAVIS/blob/main/projects/pnp-vqa/pnp_vqa.ipynb)
+We include an interactive demo [Colab notebook](https://colab.research.google.com/github/anonymous/LAVIS/blob/main/projects/pnp-vqa/pnp_vqa.ipynb)
 to show PNP-VQA inference workflow:
 1. Image-question matching: compute the relevancy score of the image patches wrt the question.
 2. Image captioning: generate question-guided captions based on the relevancy score.

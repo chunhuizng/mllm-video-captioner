@@ -1,6 +1,6 @@
 """
-Adapted from salesforce@LAVIS. Below is the original copyright:
- * Copyright (c) 2023, salesforce.com, inc.
+Adapted from anonymous@LAVIS. Below is the original copyright:
+ * Copyright (c) 2023, anonymous.com, inc.
  * All rights reserved.
  * SPDX-License-Identifier: BSD-3-Clause
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause

@@ -23,7 +23,7 @@ Accuracy.
 | Rank | Model  | Acc. | Resources |
 | ---- | :----: | :-------: | :-------: |
 | 1   |  VQA-T  |  46.3 | [paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Just_Ask_Learning_To_Answer_Questions_From_Millions_of_Narrated_ICCV_2021_paper.pdf), [code](https://github.com/antoyang/just-ask), [demo](http://videoqa.paris.inria.fr/) |
-| 2    |  ALPro  |  45.9 |  [paper](https://arxiv.org/abs/2112.09583), [code](https://github.com/salesforce/ALPRO), [blog](https://blog.salesforceairesearch.com/alpro/) |
+| 2    |  ALPro  |  45.9 |  [paper](https://arxiv.org/abs/2112.09583), [code](https://github.com/anonymous/ALPRO), [blog](https://blog.anonymousairesearch.com/alpro/) |
 | 3   |  CoMVT | 42.6 | [paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Seo_Look_Before_You_Speak_Visually_Contextualized_Utterances_CVPR_2021_paper.pdf) |
 | 4   |  DualVGR | 39.0 | [paper](https://arxiv.org/pdf/2107.04768v1.pdf) [code](https://github.com/NJUPT-MCC/DualVGR-VideoQA) |
 | 5   |  HCRN | 36.1 | [paper](https://arxiv.org/abs/2002.10698) [code](https://github.com/thaolmk54/hcrn-videoqa) |
