@@ -1,0 +1,80 @@
+model:
+  arch: simvlg_t5
+  model_type: pretrain_flant5xl
+  load_pretrained: True
+  load_finetuned: False
+
+  pretrained: "/home/yiren/new_ssd/cache_dir/blip2_models/blip2_pretrained_flant5xl.pth"
+
+  image_size: 224
+  drop_path_rate: 0
+  use_grad_checkpoint: False
+  vit_precision: "fp16"
+  freeze_vit: True
+
+  # LoRA
+  lora: True
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+
+  # Q-Former
+  num_query_token: 20
+
+  # T5
+  t5_model: "google/flan-t5-xl"
+
+  # generation configs
+  prompt: "a video of"
+
+datasets:
+  msrvtt_caption: # name of the dataset builder
+    vis_processor:
+        train:
+          name: "alpro_video_train"
+          n_frms: 8
+          image_size: 224
+        eval:
+          name: "alpro_video_eval"
+          n_frms: 8
+          image_size: 224
+    text_processor:
+        train:
+          name: "blip_caption"
+        eval:
+          name: "blip_caption"
+
+run:
+  task: captioning
+  # optimizer
+  lr_sched: "linear_warmup_cosine_lr"
+  init_lr: 5e-4
+  min_lr: 5e-5
+  warmup_lr: 1e-8
+  warmup_steps: 1000
+  weight_decay: 0.05
+  max_epoch: 20
+  batch_size_train: 64
+  batch_size_eval: 32
+  num_workers: 4
+  accum_grad_iters: 1
+
+  max_len: 32
+  min_len: 5
+  num_beams: 5
+
+  seed: 42
+  output_dir: "output/Video-SimVLG/FLAN-T5-XL/Caption_msrvtt"
+
+  amp: True
+  resume_ckpt_path: null
+
+  evaluate: False
+  train_splits: ["train"]
+  valid_splits: ["val"]
+  test_splits: ["test"]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True

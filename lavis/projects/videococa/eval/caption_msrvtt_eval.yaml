@@ -1,0 +1,38 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+model:
+  arch: videococa
+  model_type: coca_ViT-L-14
+  load_finetuned: True
+
+datasets:
+  msrvtt_caption: # name of the dataset builder
+    vis_processor:
+        eval:
+          name: "alpro_video_eval"
+          n_frms: 8
+          image_size: 224
+
+run:
+  task: captioning
+  batch_size_train: 32
+  batch_size_eval: 64
+  num_workers: 4
+
+  max_len: 20
+  min_len: 5
+  num_beams: 3
+
+  seed: 42
+  output_dir: "output/VideoCoCa/Caption_msrvtt"
+
+  evaluate: True
+  test_splits: ["val"]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True

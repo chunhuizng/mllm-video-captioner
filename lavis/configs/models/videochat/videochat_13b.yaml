@@ -1,0 +1,49 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+model:
+  arch: videochat
+  load_finetuned: False
+  load_pretrained: False
+
+  vit_model: "eva_clip_g"
+  vit_model_path: "/mnt/bd/yiren-bytedrive/cache_dir/blip2_models/eva_vit_g.pth"
+  q_former_model_path: "/mnt/bd/yiren-bytedrive/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth"
+  llama_model_path: "lmsys/vicuna-13b-v1.3"
+  # videochat_model_path: ""
+  
+  img_size: 224
+  num_query_token: 32
+  drop_path_rate: 0.0
+  use_grad_checkpoint: false
+  vit_precision: "fp32"
+  freeze_vit: true
+  freeze_mhra: false
+  freeze_qformer: true
+  low_resource: false
+  max_txt_len: 32
+  temporal_downsample: false
+  no_lmhra: true
+  double_lmhra: false
+  lmhra_reduction: 2.0
+  gmhra_layers: 8
+  gmhra_drop_path_rate: 0.0
+  gmhra_dropout: 0.5
+  extra_num_query_token: 64
+
+
+preprocess:
+    vis_processor:
+        train:
+          name: "blip2_image_train"
+          image_size: 224
+        eval:
+          name: "blip_image_eval"
+          image_size: 224
+    text_processor:
+        train:
+          name: "blip_caption"
+        eval:
+          name: "blip_caption"

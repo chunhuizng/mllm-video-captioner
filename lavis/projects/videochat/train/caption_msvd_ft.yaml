@@ -1,0 +1,97 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+model:
+  arch: videochat_pt
+  model_type: videochat_vicuna7b
+
+  load_pretrained: False
+  load_finetuned: True
+
+  finetuned: "/home/yiren/new_ssd/saved_checkpoints/VideoChat/Pretrain_msrvtt/20230831021/checkpoint_50001.pth"
+
+  vit_model: "eva_clip_g"
+  vit_model_path: "/home/yiren/new_ssd/cache_dir/blip2_models/eva_vit_g.pth"
+  q_former_model_path: "/home/yiren/new_ssd/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth"
+  llama_model_path: "lmsys/vicuna-7b-v1.3"
+  gpt_model_path: ""
+  img_size: 224
+  num_query_token: 32
+  drop_path_rate: 0.
+  use_grad_checkpoint: False
+  vit_precision: "fp32"
+  freeze_vit: True
+  freeze_mhra: False # open mhra
+  freeze_qformer: True
+  low_resource: False
+  # prompt_path: "prompts/concise_description.txt"
+  # img_prompt_path: "prompts/concise_image_description.txt"
+  # prompt_template: "###Human: {} ###Assistant: "
+  max_txt_len: 32 # use large max_txt_len on stage2
+  end_sym: "###"
+
+  # uniformerv2
+  temporal_downsample: False
+  no_lmhra: True
+  double_lmhra: False
+  lmhra_reduction: 2.0
+  gmhra_layers: 8
+  gmhra_drop_path_rate: 0.
+  gmhra_dropout: 0.5
+  
+  # qformer
+  extra_num_query_token: 64
+
+datasets:
+  msvd_caption: # name of the dataset builder
+    vis_processor:
+        train:
+          name: "alpro_video_train"
+          n_frms: 4
+          image_size: 224
+        eval:
+          name: "alpro_video_eval"
+          n_frms: 4
+          image_size: 224
+    text_processor:
+        train:
+          name: "blip_caption"
+        eval:
+          name: "blip_caption"
+
+run:
+  task: captioning
+  # optimizer
+  lr_sched: "linear_warmup_cosine_lr"
+  init_lr: 1e-6
+  min_lr: 1e-7
+  warmup_lr: 1e-8
+  warmup_steps: 1000
+  weight_decay: 1e-4
+  max_epoch: 30
+  batch_size_train: 16 ### VRAM: 26435MB, 8x V100 --> 4000 steps
+  batch_size_eval: 16
+  num_workers: 4
+  accum_grad_iters: 1
+
+  max_len: 20
+  min_len: 5
+  num_beams: 3
+
+  seed: 42
+  output_dir: "/home/yiren/new_ssd/saved_checkpoints/VideoChat/Caption_msvd_a100" 
+
+  amp: True
+  resume_ckpt_path: null
+
+  evaluate: False
+  train_splits: ["train"]
+  valid_splits: ["val"]
+  test_splits: ["test"]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True

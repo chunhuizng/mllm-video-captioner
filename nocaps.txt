@@ -1,0 +1,27 @@
+BLIP2-opt2.7b
+B1: 0.840
+B2: 0.708
+B3: 0.571
+B4: 0.444
+computing METEOR score...
+METEOR: 0.295
+computing Rouge score...
+ROUGE-L: 0.597
+computing CIDEr score...
+No of reference sentences: 10
+CIDEr: 1.122
+computing SPICE score...
+SPICE: nan
+
+BLIP2-vicuna7b
+B1: 0.856
+B2: 0.718
+B3: 0.579
+B4: 0.453
+computing METEOR score...
+METEOR: 0.303
+computing Rouge score...
+ROUGE-L: 0.606
+computing CIDEr score...
+No of reference sentences: 10
+CIDEr: 1.156

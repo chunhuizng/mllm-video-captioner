@@ -1,0 +1,78 @@
+model:
+  arch: blip2_opt
+  model_type: pretrain_opt2.7b
+  load_pretrained: True
+  load_finetuned: False
+
+  pretrained: "/home/yiren/new_ssd/cache_dir/blip2_models/blip2_pretrained_opt2.7b.pth"
+  finetuned: "/home/yiren/new_ssd/cache_dir/blip2_models/blip2_caption_opt2.7b.pth"
+
+  # vit encoder
+  image_size: 224
+  drop_path_rate: 0
+  use_grad_checkpoint: False
+  vit_precision: "fp16"
+  freeze_vit: True
+
+  # Q-Former
+  num_query_token: 32
+
+  # OPT
+  opt_model: "facebook/opt-2.7b"
+
+  # generation configs
+  prompt: ""
+
+  scst: True # https://arxiv.org/abs/1612.00563
+
+datasets:
+  msrvtt_caption: # name of the dataset builder
+    vis_processor:
+        train:
+          name: "alpro_video_train"
+          n_frms: 4
+          image_size: 224
+        eval:
+          name: "alpro_video_eval"
+          n_frms: 4
+          image_size: 224
+    text_processor:
+        train:
+          name: "blip_caption"
+        eval:
+          name: "blip_caption"
+
+run:
+  task: captioning
+  # optimizer
+  lr_sched: "linear_warmup_cosine_lr"
+  init_lr: 1e-6
+  min_lr: 0
+  warmup_lr: 1e-8
+  warmup_steps: 1000
+  weight_decay: 0.05
+  max_epoch: 20
+  batch_size_train: 16
+  batch_size_eval: 16
+  num_workers: 4
+  accum_grad_iters: 1
+
+  max_len: 32
+  min_len: 5
+  num_beams: 5
+
+  seed: 42
+  output_dir: "output/Video-BLIP2/OPT-2.7B/Caption_msrvtt"
+
+  amp: True
+  resume_ckpt_path: null
+
+  evaluate: False
+  train_splits: ["train"]
+  valid_splits: ["val"]
+  test_splits: ["test"]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True
