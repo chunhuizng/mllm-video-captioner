@@ -4,7 +4,7 @@ model:
   load_pretrained: True
   load_finetuned: False
 
-  pretrained: "/home/yiren/new_ssd2/VideoBenchmark2/lavis/output/Video-BLIP2/FLAN-T5-XL/Caption_msrvtt/20231219222/checkpoint_best.pth"
+  pretrained: "/home/anonymous/new_ssd2/VideoBenchmark2/lavis/output/Video-BLIP2/FLAN-T5-XL/Caption_msrvtt/20231219222/checkpoint_best.pth"
 
   image_size: 224
   drop_path_rate: 0

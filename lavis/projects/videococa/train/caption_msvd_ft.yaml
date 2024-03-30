@@ -9,7 +9,7 @@ model:
   load_pretrained: False
   load_finetuned: True
 
-  finetuned: "/home/yiren/new_ssd/saved_checkpoints/VideoCoCa/Pretrain_msrvtt/20230829094/checkpoint_best.pth"
+  finetuned: "/home/anonymous/new_ssd/saved_checkpoints/VideoCoCa/Pretrain_msrvtt/20230829094/checkpoint_best.pth"
 
 datasets:
   msvd_caption: # name of the dataset builder
@@ -48,7 +48,7 @@ run:
   num_beams: 3
 
   seed: 42
-  output_dir: "/home/yiren/new_ssd/saved_checkpoints/VideoCoCa/Caption_msvd"
+  output_dir: "/home/anonymous/new_ssd/saved_checkpoints/VideoCoCa/Caption_msvd"
 
   amp: True
   resume_ckpt_path: null

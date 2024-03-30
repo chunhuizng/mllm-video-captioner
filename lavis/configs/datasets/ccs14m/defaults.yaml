@@ -13,8 +13,8 @@ datasets:
       annotations:
         train:
           url:
-              - /home/yiren/new_ssd/lavis_datasets/ccs14m/annotations/ccs14m.json
+              - /home/anonymous/new_ssd/lavis_datasets/ccs14m/annotations/ccs14m.json
           storage:
-              - /home/yiren/new_ssd/lavis_datasets/ccs14m/annotations/ccs14m.json
+              - /home/anonymous/new_ssd/lavis_datasets/ccs14m/annotations/ccs14m.json
       images:
-          storage: /home/yiren/new_ssd/lavis_datasets/ccs14m
+          storage: /home/anonymous/new_ssd/lavis_datasets/ccs14m

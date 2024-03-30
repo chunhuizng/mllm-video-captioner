@@ -534,7 +534,7 @@ class VideoCoCa(BaseModel):
         precision = cfg.get("precision", "fp32")
 
         return create_model(
-            model_name=model_name, pretrained=pretrained, precision=precision, cache_dir="/home/yiren/new_ssd/cache_dir"
+            model_name=model_name, pretrained=pretrained, precision=precision, cache_dir="/home/anonymous/new_ssd/cache_dir"
         )
 
 

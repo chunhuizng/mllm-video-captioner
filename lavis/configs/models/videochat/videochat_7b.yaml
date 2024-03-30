@@ -9,8 +9,8 @@ model:
   load_pretrained: False
 
   vit_model: "eva_clip_g"
-  vit_model_path: "/mnt/bd/yiren-bytedrive/cache_dir/blip2_models/eva_vit_g.pth"
-  q_former_model_path: "/mnt/bd/yiren-bytedrive/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth"
+  vit_model_path: "/mnt/bd/anonymous-anonymous/cache_dir/blip2_models/eva_vit_g.pth"
+  q_former_model_path: "/mnt/bd/anonymous-anonymous/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth"
   llama_model_path: "lmsys/vicuna-7b-v1.3"
   # videochat_model_path: ""
   

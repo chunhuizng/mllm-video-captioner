@@ -104,16 +104,16 @@ class SimvlgT5(Blip2Base):
             logging.info("freeze vision encoder")
 
         # TomeFormer
-        encoder_config = BertConfig.from_pretrained("bert-base-uncased")   ### cache_dir="/home/yiren/new_ssd/cache_dir"
+        encoder_config = BertConfig.from_pretrained("bert-base-uncased")   ### cache_dir="/home/anonymous/new_ssd/cache_dir"
         encoder_config.r = num_query_token
-        self.Tomeformer = BertModel.from_pretrained("bert-base-uncased", config=encoder_config)   ### cache_dir="/home/yiren/new_ssd/cache_dir"
+        self.Tomeformer = BertModel.from_pretrained("bert-base-uncased", config=encoder_config)   ### cache_dir="/home/anonymous/new_ssd/cache_dir"
         self.vit_proj = nn.Linear(self.visual_encoder.embed_dim, encoder_config.hidden_size)
 
-        self.t5_tokenizer = T5TokenizerFast.from_pretrained(t5_model)   ### cache_dir="/home/yiren/new_ssd/cache_dir"
+        self.t5_tokenizer = T5TokenizerFast.from_pretrained(t5_model)   ### cache_dir="/home/anonymous/new_ssd/cache_dir"
         t5_config = T5Config.from_pretrained(t5_model)
         t5_config.dense_act_fn = "gelu"
         self.t5_model = T5ForConditionalGeneration.from_pretrained(
-            t5_model, config=t5_config   ### cache_dir="/home/yiren/new_ssd/cache_dir"
+            t5_model, config=t5_config   ### cache_dir="/home/anonymous/new_ssd/cache_dir"
         )
 
         for name, param in self.t5_model.named_parameters():

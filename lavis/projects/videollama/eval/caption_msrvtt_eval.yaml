@@ -2,7 +2,7 @@ model:
   arch: video_llama
   model_type: vicuna_7b
   load_pretrained: True
-  # pretrained: "/home/yiren/new_ssd/saved_checkpoints/Video-LLaMA/Caption_msrvtt/20230831030/checkpoint_best.pth"
+  # pretrained: "/home/anonymous/new_ssd/saved_checkpoints/Video-LLaMA/Caption_msrvtt/20230831030/checkpoint_best.pth"
   # BLEU-1: 0.8240
   # BLEU-2: 0.7047
   # BLEU-3: 0.5772
@@ -11,7 +11,7 @@ model:
   # ROUGE: 0.6269
   # CIDER: 0.5604
 
-  pretrained: "/home/yiren/new_ssd/saved_checkpoints/Video-LLaMA/Caption_msrvtt/20230831084/checkpoint_best.pth"
+  pretrained: "/home/anonymous/new_ssd/saved_checkpoints/Video-LLaMA/Caption_msrvtt/20230831084/checkpoint_best.pth"
 
   freeze_vit: True
   freeze_qformer: True

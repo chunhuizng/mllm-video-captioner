@@ -109,9 +109,9 @@ class Blip2OPT(Blip2Base):
             layer.output = None
             layer.intermediate = None
 
-        self.opt_tokenizer = AutoTokenizer.from_pretrained(opt_model, use_fast=False, cache_dir="/home/yiren/new_ssd/cache_dir")
+        self.opt_tokenizer = AutoTokenizer.from_pretrained(opt_model, use_fast=False, cache_dir="/home/anonymous/new_ssd/cache_dir")
         self.opt_model = OPTForCausalLM.from_pretrained(
-            opt_model, torch_dtype=torch.float16, cache_dir="/home/yiren/new_ssd/cache_dir"
+            opt_model, torch_dtype=torch.float16, cache_dir="/home/anonymous/new_ssd/cache_dir"
         )
         for name, param in self.opt_model.named_parameters():
             param.requires_grad = False

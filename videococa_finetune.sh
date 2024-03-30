@@ -21,4 +21,4 @@ torchrun \
 --nproc_per_node=$ARNOLD_WORKER_GPU \
 --master_addr=$METIS_WORKER_0_HOST \
 --master_port=$port \
-train.py --cfg-path lavis/projects/videococa/train/caption_msrvtt_ft.yaml $@
+train.py --cfg- lavis/projects/videococa/train/caption_msrvtt_ft.yaml $@

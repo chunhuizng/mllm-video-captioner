@@ -4,8 +4,8 @@ model:
   load_pretrained: True
   load_finetuned: False
 
-  pretrained: "/home/yiren/new_ssd/cache_dir/blip2_models/blip2_pretrained_opt2.7b.pth"
-  finetuned: "/home/yiren/new_ssd/cache_dir/blip2_models/blip2_caption_opt2.7b.pth"
+  pretrained: "/home/anonymous/new_ssd/cache_dir/blip2_models/blip2_pretrained_opt2.7b.pth"
+  finetuned: "/home/anonymous/new_ssd/cache_dir/blip2_models/blip2_caption_opt2.7b.pth"
 
   image_size: 224
   drop_path_rate: 0

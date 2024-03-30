@@ -17,4 +17,4 @@ datasets:
           storage:
               - webvid/annotations/webvid_2m.json
       images:
-          storage: /home/yiren/new_ssd/webvid2m/train_dataset
+          storage: /home/anonymous/new_ssd/webvid2m/train_dataset

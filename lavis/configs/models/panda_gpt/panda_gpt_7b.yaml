@@ -1,5 +1,5 @@
 model:
-  imagebind_ckpt_path: "/mnt/bd/yiren-bytedrive/cache_dir/ImageBind"
+  imagebind_ckpt_path: "/mnt/bd/anonymous-anonymous/cache_dir/ImageBind"
   vicuna_ckpt_path: "lmsys/vicuna-7b-v1.3"
   max_tgt_len: 32
   stage: 1

@@ -17,4 +17,4 @@ datasets:
           storage:
               - webvid/annotations/webvid_10m.json
       videos:
-          storage: /home/yiren/new_ssd/webvid10m/train_dataset
+          storage: /home/anonymous/new_ssd/webvid10m/train_dataset

@@ -120,7 +120,7 @@ class VideoChat(Blip2Base):
         print('Loading Q-Former Done')
 
         print('Loading LLAMA')
-        self.llama_tokenizer = LlamaTokenizer.from_pretrained(llama_model_path, use_fast=False, cache_dir="/home/yiren/new_ssd/cache_dir")
+        self.llama_tokenizer = LlamaTokenizer.from_pretrained(llama_model_path, use_fast=False, cache_dir="/home/anonymous/new_ssd/cache_dir")
         self.llama_tokenizer.pad_token = self.llama_tokenizer.eos_token
 
         if self.low_resource:
@@ -130,14 +130,14 @@ class VideoChat(Blip2Base):
                 load_in_8bit=True,
                 device_map="auto",
                 use_cache=True,
-                cache_dir="/home/yiren/new_ssd/cache_dir"
+                cache_dir="/home/anonymous/new_ssd/cache_dir"
             )
         else:
             self.llama_model = LlamaForCausalLM.from_pretrained(
                 llama_model_path,
                 torch_dtype=torch.float16,
                 use_cache=True,
-                cache_dir="/home/yiren/new_ssd/cache_dir"
+                cache_dir="/home/anonymous/new_ssd/cache_dir"
             )
 
         print("freeze LLAMA")

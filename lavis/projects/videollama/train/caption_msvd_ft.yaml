@@ -7,7 +7,7 @@ model:
   load_pretrained: False
   load_finetuned: True
 
-  finetuned: "/home/yiren/new_ssd/saved_checkpoints/Video-LLaMA/Pretrain_msrvtt/20230831012/checkpoint_50000.pth"
+  finetuned: "/home/anonymous/new_ssd/saved_checkpoints/Video-LLaMA/Pretrain_msrvtt/20230831012/checkpoint_50000.pth"
 
   # Q-Former
   num_query_token: 32
@@ -61,7 +61,7 @@ run:
   num_beams: 3
 
   seed: 42
-  output_dir: "/home/yiren/new_ssd/saved_checkpoints/Video-LLaMA/Caption_msvd_last"
+  output_dir: "/home/anonymous/new_ssd/saved_checkpoints/Video-LLaMA/Caption_msvd_last"
 
   amp: True
   resume_ckpt_path: null

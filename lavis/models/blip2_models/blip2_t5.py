@@ -111,11 +111,11 @@ class Blip2T5(Blip2Base):
             layer.output = None
             layer.intermediate = None
 
-        self.t5_tokenizer = T5TokenizerFast.from_pretrained(t5_model)   ### cache_dir="/home/yiren/new_ssd/cache_dir"
+        self.t5_tokenizer = T5TokenizerFast.from_pretrained(t5_model)   ### cache_dir="/home/anonymous/new_ssd/cache_dir"
         t5_config = T5Config.from_pretrained(t5_model)
         t5_config.dense_act_fn = "gelu"
         self.t5_model = T5ForConditionalGeneration.from_pretrained(
-            t5_model, config=t5_config,   ### cache_dir="/home/yiren/new_ssd/cache_dir"
+            t5_model, config=t5_config,   ### cache_dir="/home/anonymous/new_ssd/cache_dir"
         )
 
         for name, param in self.t5_model.named_parameters():

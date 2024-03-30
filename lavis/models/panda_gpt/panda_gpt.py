@@ -87,7 +87,7 @@ class PandaGPT(BaseModel):
 
     def __init__(
         self,
-        imagebind_ckpt_path="/home/yiren/new_ssd/cache_dir/ImageBind",
+        imagebind_ckpt_path="/home/anonymous/new_ssd/cache_dir/ImageBind",
         vicuna_ckpt_path="lmsys/vicuna-7b-v1.3",
         max_tgt_len=32,
         stage=1,
@@ -129,11 +129,11 @@ class PandaGPT(BaseModel):
             target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']
         )
 
-        self.llama_model = LlamaForCausalLM.from_pretrained(vicuna_ckpt_path, torch_dtype=torch.float16, use_cache=True, cache_dir="/home/yiren/new_ssd/cache_dir")
+        self.llama_model = LlamaForCausalLM.from_pretrained(vicuna_ckpt_path, torch_dtype=torch.float16, use_cache=True, cache_dir="/home/anonymous/new_ssd/cache_dir")
         self.llama_model = get_peft_model(self.llama_model, peft_config)
         self.llama_model.print_trainable_parameters()
 
-        self.llama_tokenizer = LlamaTokenizer.from_pretrained(vicuna_ckpt_path, use_fast=False, cache_dir="/home/yiren/new_ssd/cache_dir")
+        self.llama_tokenizer = LlamaTokenizer.from_pretrained(vicuna_ckpt_path, use_fast=False, cache_dir="/home/anonymous/new_ssd/cache_dir")
         self.llama_tokenizer.pad_token = self.llama_tokenizer.eos_token
         self.llama_tokenizer.padding_side = "right"
         print ('Language decoder initialized.')
@@ -383,7 +383,7 @@ class PandaGPT(BaseModel):
 
     @classmethod
     def from_config(cls, cfg):
-        imagebind_ckpt_path = cfg.get("imagebind_ckpt_path", "/home/yiren/new_ssd/cache_dir/ImageBind")
+        imagebind_ckpt_path = cfg.get("imagebind_ckpt_path", "/home/anonymous/new_ssd/cache_dir/ImageBind")
         vicuna_ckpt_path = cfg.get("vicuna_ckpt_path", "lmsys/vicuna-7b-v1.3")
         max_tgt_len = cfg.get("max_tgt_len", 32)
         stage = cfg.get("stage", 1)

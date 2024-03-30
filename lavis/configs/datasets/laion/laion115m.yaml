@@ -10,4 +10,4 @@ datasets:
 
     build_info:
       # Be careful not to append minus sign (-) before split to avoid itemizing
-      storage: /home/yiren/new_ssd/laion115m/{00000..10488}.tar
+      storage: /home/anonymous/new_ssd/laion115m/{00000..10488}.tar

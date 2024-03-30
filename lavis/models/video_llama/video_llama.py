@@ -50,7 +50,7 @@ class VideoLLAMA(Blip2Base):
 
     @classmethod
     def init_video_Qformer(cls, num_query_token, vision_width, num_hidden_layers=2):
-        encoder_config = BertConfig.from_pretrained("bert-base-uncased", cache_dir="/home/yiren/new_ssd/cache_dir")
+        encoder_config = BertConfig.from_pretrained("bert-base-uncased", cache_dir="/home/anonymous/new_ssd/cache_dir")
         encoder_config.num_hidden_layers = num_hidden_layers
         encoder_config.encoder_width = vision_width
         # insert cross-attention layer every other block
@@ -68,7 +68,7 @@ class VideoLLAMA(Blip2Base):
         self,
         vit_model="eva_clip_g",
         # q_former_model="https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained_flant5xxl.pth",
-        q_former_model="/home/yiren/new_ssd/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth",
+        q_former_model="/home/anonymous/new_ssd/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth",
         img_size=224,
         drop_path_rate=0,
         use_grad_checkpoint=False,
@@ -139,7 +139,7 @@ class VideoLLAMA(Blip2Base):
         logging.info('Loading Q-Former Done')
 
         logging.info('Loading LLAMA Tokenizer')
-        self.llama_tokenizer = LlamaTokenizer.from_pretrained(llama_model, use_fast=False, cache_dir="/home/yiren/new_ssd/cache_dir")
+        self.llama_tokenizer = LlamaTokenizer.from_pretrained(llama_model, use_fast=False, cache_dir="/home/anonymous/new_ssd/cache_dir")
         if self.llama_tokenizer.pad_token is None:
             self.llama_tokenizer.pad_token = self.llama_tokenizer.eos_token 
         DEFAULT_IMAGE_PATCH_TOKEN = '<ImageHere>'
@@ -158,14 +158,14 @@ class VideoLLAMA(Blip2Base):
                 load_in_8bit=True,
                 device_map={'': device_8bit},
                 use_cache=True,
-                cache_dir="/home/yiren/new_ssd/cache_dir"
+                cache_dir="/home/anonymous/new_ssd/cache_dir"
             )
         else:
             self.llama_model = LlamaForCausalLM.from_pretrained(
                 llama_model,
                 torch_dtype=torch.float16,
                 use_cache=True,
-                cache_dir="/home/yiren/new_ssd/cache_dir"
+                cache_dir="/home/anonymous/new_ssd/cache_dir"
             )
 
         for name, param in self.llama_model.named_parameters():
@@ -613,7 +613,7 @@ class VideoLLAMA(Blip2Base):
     @classmethod
     def from_config(cls, cfg):
         vit_model = cfg.get("vit_model", "eva_clip_g")
-        q_former_model = cfg.get("q_former_model", "/home/yiren/new_ssd/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth")
+        q_former_model = cfg.get("q_former_model", "/home/anonymous/new_ssd/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth")
         img_size = cfg.get("image_size")
         num_query_token = cfg.get("num_query_token")
         llama_model = cfg.get("llama_model")

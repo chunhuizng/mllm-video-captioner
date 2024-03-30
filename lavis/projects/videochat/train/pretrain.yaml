@@ -8,8 +8,8 @@ model:
   model_type: videochat_vicuna7b
 
   vit_model: "eva_clip_g"
-  vit_model_path: "/home/yiren/new_ssd/cache_dir/blip2_models/eva_vit_g.pth"
-  q_former_model_path: "/home/yiren/new_ssd/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth"
+  vit_model_path: "/home/anonymous/new_ssd/cache_dir/blip2_models/eva_vit_g.pth"
+  q_former_model_path: "/home/anonymous/new_ssd/cache_dir/blip2_models/blip2_pretrained_flant5xxl.pth"
   llama_model_path: "lmsys/vicuna-7b-v1.3"
   gpt_model_path: ""
   img_size: 224
@@ -126,10 +126,10 @@ run:
   num_beams: 3
 
   seed: 42
-  output_dir: "/home/yiren/new_ssd/saved_checkpoints/VideoChat/Pretrain_msrvtt"
+  output_dir: "/home/anonymous/new_ssd/saved_checkpoints/VideoChat/Pretrain_msrvtt"
 
   amp: True
-  resume_ckpt_path: "/home/yiren/new_ssd/saved_checkpoints/VideoChat/Pretrain_msrvtt/20230830031/checkpoint_35000.pth"
+  resume_ckpt_path: "/home/anonymous/new_ssd/saved_checkpoints/VideoChat/Pretrain_msrvtt/20230830031/checkpoint_35000.pth"
 
   evaluate: False
   train_splits: ["train"]

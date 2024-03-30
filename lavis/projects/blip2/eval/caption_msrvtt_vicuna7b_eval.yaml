@@ -4,8 +4,8 @@ model:
   load_pretrained: True
   load_finetuned: False
 
-  pretrained: "/home/yiren/new_ssd/cache_dir/blip2_models/blip2_pretrained_vicuna7b.pth"
-  finetuned: "/home/yiren/new_ssd/cache_dir/blip2_models/instruct_blip_vicuna7b_trimmed.pth"
+  pretrained: "/home/anonymous/new_ssd/cache_dir/blip2_models/blip2_pretrained_vicuna7b.pth"
+  finetuned: "/home/anonymous/new_ssd/cache_dir/blip2_models/instruct_blip_vicuna7b_trimmed.pth"
 
   # vit encoder
   image_size: 224
@@ -18,7 +18,7 @@ model:
   num_query_token: 32
 
   # path to Vicuna checkpoint
-  llm_model: "/home/yiren/new_ssd/cache_dir/vicuna-7b-1.1"
+  llm_model: "/home/anonymous/new_ssd/cache_dir/vicuna-7b-1.1"
 
   # generation configs
   prompt: ""

@@ -97,7 +97,7 @@ run:
   num_beams: 3
 
   seed: 42
-  output_dir: "/home/yiren/new_ssd/saved_checkpoints/VideoCoCa/Pretrain_msrvtt"
+  output_dir: "/home/anonymous/new_ssd/saved_checkpoints/VideoCoCa/Pretrain_msrvtt"
 
   amp: True
   resume_ckpt_path: null
