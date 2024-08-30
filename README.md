@@ -1,4 +1,4 @@
-# VideoBenchmark2
+# An Open-Source Guide: Recycling BLIP-2 from Image to Video Captioning
 
 ## Anoymous GitHub Page
 We are not part of LAVIS project and we have removed links, usernames, paths, etc which may reveal our identities.
