@@ -1,4 +1,8 @@
-# An Open-Source Guide: Recycling BLIP-2 from Image to Video Captioning
+# Pretrained Image-Text Models are Secretly Video Captioners
+
+This study adapts a pretrained image-text model, BLIP-2, to the task of video captioning. By using the visual and language understanding capabilities of BLIP-2, which is initially trained for image-text tasks, we show that the model also can effectively generate video captions without requiring architectural modifications or additional parameters. This approach enables high-quality caption generation by repurposing an existing image-text model for multi-frame video data.
+
+
 
 ## Anoymous GitHub Page
 We are not part of LAVIS project and we have removed links, usernames, paths, etc which may reveal our identities.
