@@ -1,6 +1,6 @@
 # Pretrained Image-Text Models are Secretly Video Captioners
 
-This study adapts a pretrained image-text model, BLIP-2, to the task of video captioning. By using the visual and language understanding capabilities of BLIP-2, which is initially trained for image-text tasks, we show that the model also can effectively generate video captions without requiring architectural modifications or additional parameters. This approach enables high-quality caption generation by repurposing an existing image-text model for multi-frame video data.
+This **fully open-source reproducible** study adapts a pretrained image-text model, BLIP-2, to the task of video captioning. By using the visual and language understanding capabilities of BLIP-2, which is initially trained for image-text tasks, we show that the model also can effectively generate video captions without requiring architectural modifications or additional parameters. This approach enables high-quality caption generation by repurposing an existing image-text model for multi-frame video data.
 
 
 ## Installation
