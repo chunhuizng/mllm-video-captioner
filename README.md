@@ -55,7 +55,8 @@ python -m torch.distributed.run --nproc_per_node=8 evaluate.py --cfg-path lavis/
 
 We hope these results are useful to your experimental explorations. Feel free to discuss this with us (especially Yiren and me)!
 
-| LLM Decoder | Description | Train ViT | Train LLM (LoRA) | Num of Frames | Video Resolution | SCST | CIDEr |
+
+| LLM Decoder | Description | Train ViT | Train LLM (LoRA) | Num of Frames | Video Resolution | Scst | CIDEr |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | FLAN-T5-XL | No MSRVTT training, directly using BLIP-2 zero-shot results. | - | - | - | - | - | 50.8 (val) |
 | FLAN-T5-XL | Best result with 8 frames, trained weights were later used for 8-frame RL training. | No | No | 8 | 224 | No | 73.6 |
@@ -99,5 +100,7 @@ We hope these results are useful to your experimental explorations. Feel free to
 | OPT-6.7b | Switched to 6.7B model but failed 3 times, (i.e., CIDEr: 63.x) | - | - | - | - | - | 63.x |
 | Vicuna-7b | Used a larger model, results didn't seem to improve, conclusion: Vicuna-7b is unnecessary, too slow and large | No | No | - | - | No | 72.7 |
 | Vicuna-7b | Also tried SCST, it seems Vicuna SCST (RL) hardly improves (e.g., to 79), possibly because this model is already aligned with human preferences, reducing RL efficiency. | Yes | Yes | - | - | Yes | 74.8 |
+| Vicuna-7b | Also tried SCST, it seems Vicuna SCST (RL) hardly improves (e.g., to 79), possibly because this model is already aligned with human preferences, reducing RL efficiency. | Yes | Yes | - | - | Yes | 75.8 |
+| SimVLG | Also ran a random SimVLG (the simplest example using only LLM), used LLM without image-text pretraining, results were poor, indicating not only LLM is needed but also image-text alignment. | No | No | - | - | No | 57.3 |
 | Vicuna-7b | Also tried SCST, it seems Vicuna SCST (RL) hardly improves (e.g., to 79), possibly because this model is already aligned with human preferences, reducing RL efficiency. | Yes | Yes | - | - | Yes | 75.8 |
 | SimVLG | Also ran a random SimVLG (the simplest example using only LLM), used LLM without image-text pretraining, results were poor, indicating not only LLM is needed but also image-text alignment. | No | No | - | - | No | 57.3 |
