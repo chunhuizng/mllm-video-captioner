@@ -3,7 +3,9 @@
 [Paper link](https://arxiv.org/pdf/2502.13363):
 {Chunhui Zhang*, Yiren Jian*}, Zhongyu Ouyang, Soroush Vosoughi
 
-Accepted to the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025). The first two authors contributed equally and were listed in random order
+Accepted to the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025). The first two authors contributed equally and were listed in random order.
+
+Compared to open source models with minimal resource usage, we have ranked the top 2 best performers on the paperwithcode leaderboard.
  
 ## Overview
 
